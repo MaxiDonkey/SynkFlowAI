@@ -146,6 +146,7 @@
 
 ### Overview (UI + Logic + Services) - With Parallel Web Search
 
+>[!NOTE]
 >This diagram provides an overall view of the system by showing how the user interface (the form, EdgeBrowser, memos, buttons) integrates with the business logic and backend services.
 >
 >UI (Form1): Displays the visual elements that trigger execution (buttons, streaming display via EdgeBrowser, memo panels).
@@ -155,7 +156,7 @@
 
 This diagram serves as a starting point to understand how the various components interact on a global scale.
 
-```csharp
+```css
 Form1 (UI)
 ├── EdgeBrowser1 → TEdgeBrowser
 ├── Memo1, Memo2 → TMemo
@@ -205,6 +206,7 @@ Models used
 
 ### Units - Structure and Responsibilities
 
+>[!NOTE]
 >This diagram details the functional breakdown of the project into modular units, each with a specific responsibility:
 >
 >- Async.Promise: The engine for promises that handles asynchronous execution, featuring states (Pending, Fulfilled, Rejected).
@@ -269,6 +271,7 @@ Units
 
 ### Thought Chain Flow — Multi-step Reasoning + AI Prompting
 
+>[!NOTE]
 >This diagram highlights the chain-of-thought process that structures the reasoning:
 >- User Input: The user’s input forms the basis of the reasoning process.
 >- Progressive Steps:
@@ -333,6 +336,7 @@ Output
 
 ### Component Diagram - Core Services & Chain Execution
 
+>[!NOTE]
 >This diagram illustrates the component-oriented architecture linking the IoC Container with various services and modules:
 >- IoC Container: Centralizes dependency injection for interfaces such as IGenAI, IDisplayer, ICancellation, etc.
 >- Core Services: Details how promise modules (TOpenAIPromise, TOpenAIParallelPromise), the FileManager, and the Scheduler work together to orchestrate the complete workflow.
@@ -406,6 +410,7 @@ TOpenAIParallelPromise
 
 ### Sequence Diagram — Button3Click / TSampleChainExecutor Workflow
 
+>[!NOTE]
 >This sequence diagram illustrates the complete execution flow triggered by the user's action (clicking Button3).
 >- Initiation: The user’s action instantiates TSampleChainExecutor and begins the steps initialization (StepsInitialization).
 >- Chained Execution: Different steps (RunFirstStep, RunNextStep, RunLastStep) are executed sequentially, with each step relying on the result of the previous one.
@@ -505,6 +510,7 @@ Then → FileManager.CreateFileNameAndSave()
 
 ### Async Task Flow — Promises, Streaming & Callbacks
 
+>[!NOTE]
 >This diagram provides a detailed view of the internal workings of the promise system and asynchronous processing:
 >- Initialization: Creation of TPromiseParams and the triggering of execution via TScheduleEvents.
 >- Promise Lifecycle:
