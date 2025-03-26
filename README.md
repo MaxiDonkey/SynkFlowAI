@@ -112,7 +112,6 @@ This use case shows how a complete article can be generated automatically throug
 
 ## Project Structure
 
----
 |Module / Unit | Main Role |
 --- | ---
 |`ASync.Promise` | Core of the async engine ([TPromise](./GLOSSARY.md#promise--tpromise)) |
