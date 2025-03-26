@@ -186,7 +186,7 @@ Feedback and contributions are welcome! Feel free to submit ideas or open issues
 
 ## License
 
-Distributed under the MIT License. See the `LICENSE` file for details.
+Distributed under the MIT License. Refer to the [MIT LICENSE](https://choosealicense.com/licenses/mit/) file for details.
 
 <br>
 
