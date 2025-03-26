@@ -217,7 +217,7 @@ Models used
 
 This diagram helps clarify how the project is organized into modules, making maintenance and future expansion easier.
 
-```csharp
+```javascript
 Units
 ├── Async.Promise
 │   ├── TPromise<T> ← Core async logic
@@ -283,7 +283,7 @@ Units
 
 This diagram helps understand the multi-step reasoning process and how each phase contributes to the final output.
 
-```csharp
+```javascript
 User Input
 └── Memo2.Text → Prompt
 
@@ -345,7 +345,7 @@ Output
 
 This diagram offers a synthesized view of the interconnections among the different services, making it easier to grasp the overall project architecture.
 
-```csharp
+```javascript
 IoC Container
 ├── IGenAI → TGenAIFactory
 ├── IDisplayer
@@ -419,7 +419,7 @@ TOpenAIParallelPromise
 
 This diagram allows to follow the asynchronous execution flow step-by-step and understand the logic behind the workflow.
 
-```csharp
+```javascript
 User Action: Button3Click
 └── TSampleChainExecutor.Create()
     ├── Params: Prompt, Models, Path, Client
@@ -521,7 +521,7 @@ Then → FileManager.CreateFileNameAndSave()
 
 This diagram is key to understanding how asynchronous logic is implemented and how data streaming is managed within the system.
 
-```csharp
+```javascript
 User Action (Button2Click / Button3Click)
 └── Create TPromiseParams
     └── Set input, model, client, flags
