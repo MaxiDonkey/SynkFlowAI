@@ -156,7 +156,7 @@
 
 This diagram serves as a starting point to understand how the various components interact on a global scale.
 
-```java
+```javascript
 Form1 (UI)
 ├── EdgeBrowser1 → TEdgeBrowser
 ├── Memo1, Memo2 → TMemo
