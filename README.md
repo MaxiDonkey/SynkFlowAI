@@ -32,6 +32,7 @@ ___
 
 In a world where artificial intelligence demands increasingly fine-tuned orchestration, SynkFlowAI aims to prove that it's possible to merge research and development without compromise. This project was born out of a personal challenge, within an original context, to conceptualize a solution in my own way—a process that values rigor, innovation, and deep thinking over mere recognition.
 
+>[!NOTE]
 >"SynkFlowAI is not just a tool. It’s an architectural manifesto showing that structured, orchestrated, and parallel AI is possible—even in Delphi, in 2025."
 
 - **Smart Decomposition:** Break down complex problems into logical sub-steps using Chain-of-Thought reasoning.
