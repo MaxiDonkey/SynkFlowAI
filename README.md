@@ -178,6 +178,8 @@ IoC.RegisterType<IDisplayer>('browser',
 
 - To integrate another wrapper (e.g., Gemini, Claude, Deepseek, or Mistral), refer to the structure of `OpenAI.Promise`, `OpenAI.ParallelPromise`, and `OpenAI.FileManager`, and adapt the dependency injection logic accordingly.
 
+<br>
+
 ## Contributions
 
 Feedback and contributions are welcome! Feel free to submit ideas or open issues to help improve the project.
