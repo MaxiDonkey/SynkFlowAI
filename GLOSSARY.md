@@ -4,7 +4,7 @@
 - [Chain-of-Thought](#chain-of-thought)
 - [Pipeline](#pipeline)
 - [Scheduler](#scheduler)
-- [Promise / TPromise<T>](#promise--tpromiset)
+- [Promise / TPromise<T>](#promise--tpromise)
 - [TPromiseParams / TParameters](#tpromiseparams--tparameters)
 - [Prototype](#prototype)
 - [TPromiseEvents](#tpromiseevents)

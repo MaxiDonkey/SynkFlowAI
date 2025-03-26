@@ -1,7 +1,7 @@
 # SynkFlowAI
 ### Orchestrate AI Thought Chains Elegantly in Delphi
 
-SynkFlowAI is an advanced asynchronous framework written in Delphi that orchestrates AI thought chains in an elegant and efficient way. With a dynamic pipeline model, a configurable sequential scheduler, and the use of Promises, this framework meets the complex requirements of interacting with modern AI models like OpenAI.
+SynkFlowAI is an advanced asynchronous framework written in Delphi that orchestrates AI thought chains in an elegant and efficient way. With a dynamic [pipeline](./GLOSSARY.md#pipeline) model, a configurable sequential scheduler, and the use of Promises, this framework meets the complex requirements of interacting with modern AI models like OpenAI.
 
 > **This project is the logical continuation of the tutorial [CerebraChainAI](https://github.com/MaxiDonkey/CerebraChainAI).**
 
