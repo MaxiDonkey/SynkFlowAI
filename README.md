@@ -55,7 +55,7 @@ This framework does not seek to compete with trendier languages, but to demonstr
   An approach to model complex reasoning through steps, making problems easier to decompose and understand.
 
 - **`Modular Architecture`**  
-  Includes an IoC Container for dependency injection, ensuring modularity and easy testing.
+  Includes an [IoC](./GLOSSARY.md#ioc-container) Container for dependency injection, ensuring modularity and easy testing.
 
 - **`Native OpenAI Integration`**  
   Efficient streaming and parallel request handling to fully leverage modern AI model capabilities.
@@ -115,10 +115,10 @@ This use case shows how a complete article can be generated automatically throug
 ---
 |Module / Unit | Main Role |
 --- | ---
-|`ASync.Promise` | Core of the async engine (TPromise) |
+|`ASync.Promise` | Core of the async engine ([TPromise](./GLOSSARY.md#promise--tpromise)) |
 |`ASync.Promise.Params` | Smooth parameter handling (Input, Model...) |
-|`Async.Promise.Manager` | CoT data + models |
-|`Async.Promise.Pipeline` | Groups steps into a pipeline |
+|`Async.Promise.Manager` | [CoT](./GLOSSARY.md#chain-of-thought) data + models |
+|`Async.Promise.Pipeline` | Groups steps into a [pipeline](./GLOSSARY.md#pipeline) |
 |`OpenAI.Promise` | Sends requests to OpenAI (streaming) |
 |`OpenAI.ParallelPromise` | AI-based parallel web search |
 |`Sample.ChainExecutor` | Full scenario (4-step AI orchestration) |
@@ -144,9 +144,9 @@ For a deeper understanding of the architecture, see the diagrams in the glossary
 
 - **IMarkDown:** For the IMarkDown interface, the solution by ***Grahame Grieve*** was used. Learn more at [delphi-markdown](https://github.com/grahamegrieve/delphi-markdown).
 
-- **OpenAI API:** The API wrapper for OpenAI, developed by me, is used in this project. See: [DelphiGenAI](https://github.com/MaxiDonkey/DelphiGenAI).
+- **OpenAI API:** The API wrapper for `OpenAI`, developed by me, is used in this project. See: [DelphiGenAI](https://github.com/MaxiDonkey/DelphiGenAI).
 
-- **App Skin:** The application uses the "Windows 11 MineShaft" skin.
+- **App Skin:** The application uses the ***Windows 11 MineShaft*** skin.
 
 <br>
 
