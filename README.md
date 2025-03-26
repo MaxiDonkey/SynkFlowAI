@@ -1,7 +1,7 @@
 # SynkFlowAI
 ### Orchestrate AI Thought Chains Elegantly in Delphi
 
-SynkFlowAI is an advanced asynchronous framework written in Delphi that orchestrates AI thought chains in an elegant and efficient way. With a dynamic [pipeline](./GLOSSARY.md#pipeline) model, a configurable sequential scheduler, and the use of Promises, this framework meets the complex requirements of interacting with modern AI models like OpenAI.
+SynkFlowAI is an advanced asynchronous framework written in Delphi that orchestrates AI thought chains in an elegant and efficient way. With a dynamic [pipeline](./GLOSSARY.md#pipeline) model, a configurable sequential [scheduler](./GLOSSARY.md#scheduler), and the use of [Promises](./GLOSSARY.md#promise--tpromise), this framework meets the complex requirements of interacting with modern AI models like OpenAI.
 
 > **This project is the logical continuation of the tutorial [CerebraChainAI](https://github.com/MaxiDonkey/CerebraChainAI).**
 
@@ -30,12 +30,12 @@ ___
 
 ## Why This Framework?
 
-In a world where artificial intelligence demands increasingly fine-tuned orchestration, SynkFlowAI aims to prove that it's possible to merge research and development without compromise. This project was born out of a personal challenge, within an original context, to conceptualize a solution in my own way—a process that values rigor, innovation, and deep thinking over mere recognition.
+In a world where artificial intelligence demands increasingly fine-tuned orchestration, `SynkFlowAI` aims to prove that it's possible to merge research and development without compromise. This project was born out of a personal challenge, within an original context, to conceptualize a solution in my own way—a process that values rigor, innovation, and deep thinking over mere recognition.
 
 >"SynkFlowAI is not just a tool. It’s an architectural manifesto showing that structured, orchestrated, and parallel AI is possible—even in Delphi, in 2025."
 
-- **Smart Decomposition:** Break down complex problems into logical sub-steps using Chain-of-Thought reasoning.
-- **Controlled Asynchrony:** Handle asynchronous tasks using Promises for clean, fluid, and scalable code.
+- **Smart Decomposition:** Break down complex problems into logical sub-steps using [Chain-of-Thought](./GLOSSARY.md#chain-of-thought) reasoning.
+- **Controlled Asynchrony:** Handle asynchronous tasks using [Promises](./GLOSSARY.md#promise--tpromise) for clean, fluid, and scalable code.
 - **Parallel Orchestration:** Perform simultaneous web searches for fast and efficient data collection.
 - **Dynamic Pipeline:** Organize your processing in a modular way to adapt to evolving environments.
 
@@ -46,7 +46,7 @@ This framework does not seek to compete with trendier languages, but to demonstr
 ## Key Features
 
 - **`Structured Asynchrony`**  
-  Advanced asynchronous task management via **Promises**, enabling secure and fluid task chaining.
+  Advanced asynchronous task management via [Promises](./GLOSSARY.md#promise--tpromise), enabling secure and fluid task chaining.
 
 - **`Dynamic Pipeline`**  
   A flexible and evolving processing sequence, adaptable to many use cases.
