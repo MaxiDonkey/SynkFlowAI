@@ -198,6 +198,8 @@ This project represents a journey of research and experimentation. It combines r
 
 Thanks for your interest and feedback. Explore `SynkFlowAI` and see how innovation can be born from the fusion of research and development.
 
+<br>
+
 ---
 
 ## Quick Links
