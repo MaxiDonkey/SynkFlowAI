@@ -93,8 +93,8 @@ TSampleChainExecutor.Create(
   procedure(Params: TChainExecutorParams)
   begin
     Params.Client(IoC.Resolve<IGenAI>);
-    Params.Prompt('Quel est l’impact du numérique sur l’éducation ?');
-    Params.Path('Résultats');
+    Params.Prompt('What is the impact of digital technology on education?');
+    Params.Path('Results');
   end)
 .Execute;
 ```
