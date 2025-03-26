@@ -203,5 +203,4 @@ Thanks for your interest and feedback. Explore `SynkFlowAI` and see how innovati
 - [Detailed Glossary](./GLOSSARY.md)
 - [Concrete Example (TSampleChainExecutor)](./)
 - [DelphiGenAI → OpenAI Wrapper](https://github.com/MaxiDonkey/DelphiGenAI)
-- [MaxiDonkey on GitHub](https://github.com/MaxiDonkey)
-# SynkFlowAI
+- [MaxiDonkey on GitHub](https://github.com/MaxiDonkey?tab=repositories)
