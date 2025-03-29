@@ -212,6 +212,8 @@ IoC.RegisterType<IDisplayer>('browser',
 
 - To integrate another wrapper (e.g., Gemini, Claude, Deepseek, or Mistral), refer to the structure of `OpenAI.Promise`, `OpenAI.ParallelPromise`, and `OpenAI.FileManager`, and adapt the dependency injection logic accordingly.
 
+- `PromiseDataTrash` (refer to unit `ASync.Promise.Params`) only removes instances when the application is closed. It would be advisable to implement a mechanism that cleans up expired instances during idle periods, for example.
+
 <br>
 
 ## Contributions
