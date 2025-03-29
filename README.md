@@ -248,6 +248,6 @@ Thanks for your interest and feedback. Explore `SynkFlowAI` and see how innovati
 ## Quick Links
 
 - [Detailed Glossary](./GLOSSARY.md)
-- [Concrete Example (TSampleChainExecutor)](./samples/Sample.ChainExecutor.pas) or (TSingleChainExecutor(./samples/Sample.SingleChainExecutor.pas)
+- [Concrete Example (TSampleChainExecutor)](./samples/Sample.ChainExecutor.pas) or [TSingleChainExecutor](./samples/Sample.SingleChainExecutor.pas)
 - [DelphiGenAI → OpenAI Wrapper](https://github.com/MaxiDonkey/DelphiGenAI)
 - [MaxiDonkey on GitHub](https://github.com/MaxiDonkey?tab=repositories)
