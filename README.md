@@ -11,6 +11,7 @@ ___
 ![GitHub](https://img.shields.io/badge/Updated%20on%20march%2026,%202025-blue)
 
 - [Why This Framework?](#why-this-framework)
+- [Installation](#installation)
 - [Key Features](#key-features)
 - [Architecture Overview](#architecture-overview)
     - [Proof by Example (included via TSampleChainExecutor)](#proof-by-example-included-via-tsamplechainexecutor)
@@ -40,6 +41,40 @@ In a world where artificial intelligence demands increasingly fine-tuned orchest
 - **Dynamic Pipeline:** Organize your processing in a modular way to adapt to evolving environments.
 
 This framework does not seek to compete with trendier languages, but to demonstrate that a modern, clear, and powerful architecture can emerge from a tool sometimes considered “traditional.” It’s like breathing new life into an old piano by composing a contemporary melody: showing that beauty and efficiency come from passion and thoughtful design—not just fashion.
+
+<br>
+
+## Installation
+
+1. Clone the repository to your workstation in the directory of your choice as follows:
+
+```bash
+cd path\to\your\folder
+git clone https://github.com/MaxiDonkey/SynkFlowAI
+```
+
+### Installing Dependencies
+
+2. Perform the same steps as in point 1 to install the DelphiGenAI repository, which enables the use of the OpenAI API wrapper.
+
+```bash
+cd path\to\your\OpenAIfolder
+git clone https://github.com/MaxiDonkey/DelphiGenAI
+```
+
+3. I used the ***VCL Windows Style - Windows 11 Mine Shaft 1.0 theme***, available in the GetIt Package Manager.
+
+![Preview](https://github.com/MaxiDonkey/SynkFlowAI/blob/main/Images/themis.png?raw=true "Preview")
+
+4.Open the `PromiseEx2.dpr` project with **Delphi**, then update the search paths in the project options as follows:
+
+![Preview](https://github.com/MaxiDonkey/SynkFlowAI/blob/main/Images/SearchPath.png?raw=true "Preview")
+
+5. In the runtime directory, make sure to add the 32-bit DLL named `WebView2Loader.dll`, which you can find in the DLL folder of the repository.
+
+6. Run the project. You should get the following:
+
+![Preview](https://github.com/MaxiDonkey/SynkFlowAI/blob/main/Images/Application.png?raw=true "Preview")
 
 <br>
 
