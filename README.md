@@ -72,7 +72,14 @@ git clone https://github.com/MaxiDonkey/DelphiGenAI
 
 5. In the runtime directory, make sure to add the 32-bit DLL named `WebView2Loader.dll`, which you can find in the DLL folder of the repository.
 
-6. Run the project. You should get the following:
+6. Modify the Openai key by yours :
+
+```Delphi
+const
+  OpenAIKey = 'My_OpenAI_key';
+```
+
+7. Run the project. You should get the following:
 
 ![Preview](https://github.com/MaxiDonkey/SynkFlowAI/blob/main/Images/Application.png?raw=true "Preview")
 
