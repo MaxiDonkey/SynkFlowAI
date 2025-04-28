@@ -59,7 +59,7 @@ const
     // Copy button
     '    const btn = document.createElement("button");' +
     '    btn.className  = "copy-btn";' +
-    '    btn.textContent = "Copier";' +
+    '    btn.textContent = "Copy";' +
     '    header.appendChild(btn);' +
 
     // DOM insertion
