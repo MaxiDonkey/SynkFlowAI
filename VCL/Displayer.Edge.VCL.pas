@@ -274,15 +274,7 @@ begin
     Exit;
   end;
 
-  {--- 1) Message "ready" }
-  if SameText(rawJson, '"ready"') then
-  begin
-    FBrowserInitialized := True;
-    FStreamContent := '';
-    Exit;
-  end;
-
-  {--- 2) Treat the object directly }
+  {--- Treat the object directly }
   jsonVal := TJSONObject.ParseJSONValue(rawJson);
   try
     if (jsonVal is TJSONObject) then
