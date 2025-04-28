@@ -186,7 +186,7 @@ end;
 
 function TEdgeDisplayerVCL.Display(const AText: string): string;
 var
-  script: string;
+  js: string;
 begin
   {--- Accumulate the Markdown stream }
   FStreamContent := FStreamContent + AText + sLineBreak + sLineBreak;
@@ -197,8 +197,8 @@ begin
     Exit;
 
   {--- Prepare and inject the JS script for Markdown rendering and adding buttons }
-  script := Format(JS_TEMPLATE, [EscapeJSString(FStreamContent)]);
-  FBrowser.ExecuteScript(script);
+  js := Format(JS_TEMPLATE, [EscapeJSString(FStreamContent)]);
+  FBrowser.ExecuteScript(js);
 end;
 
 function TEdgeDisplayerVCL.DisplayStream(const AText: string): string;
