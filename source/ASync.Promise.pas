@@ -1,5 +1,4 @@
 unit ASync.Promise;
-
 (*******************************************************************************
 
       Unit providing a generic implementation of Promises for handling
@@ -572,3 +571,4 @@ initialization
 finalization
   PromiseList.Free;
 end.
+

@@ -9,7 +9,7 @@ uses
   Vcl.ExtCtrls;
 
 const
-  OpenAIKey = 'My_OpenAI_key';
+  OpenAIKey = 'my_openai_key';
 
 type
   TForm1 = class(TForm)
@@ -92,16 +92,16 @@ begin
         end)
     .Execute
       .&Then<string>(
-          function (Value: string): string
-          begin
-            MemoDisplayer.Clear;
-            MemoDisplayer.Display(Value);
-            EdgeDisplayer.Clear;
-            EdgeDisplayer.Display(Value);
-            ShowMessage('Processus ended.');
-            {--- Unlock controls }
-            WaitUntil(False);
-          end);
+        function (Value: string): string
+        begin
+          MemoDisplayer.Clear;
+          MemoDisplayer.Display(Value);
+          EdgeDisplayer.Clear;
+          EdgeDisplayer.Display(Value);
+          ShowMessage('Processus ended.');
+          {--- Unlock controls }
+          WaitUntil(False);
+        end);
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
@@ -121,23 +121,23 @@ begin
         Params.Input(Memo2.Text);
       end)
     .Execute
-        .&Then<string>(
-            function (Value: string): string
-            begin
-              ShowMessage('Processus ended.');
-              {--- Unlock controls }
-              WaitUntil(False);
-            end)
-        .&Catch(
-          procedure(E: Exception)
-          begin
-            try
-              EdgeDisplayer.Display(E.Message);
-              WaitUntil(False);
-            finally
-              E.Free;
-            end;
-          end);
+      .&Then<string>(
+        function (Value: string): string
+        begin
+          ShowMessage('Processus ended.');
+          {--- Unlock controls }
+          WaitUntil(False);
+        end)
+      .&Catch(
+        procedure(E: Exception)
+        begin
+          try
+            EdgeDisplayer.Display(E.Message);
+            WaitUntil(False);
+          finally
+            E.Free;
+          end;
+        end);
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
@@ -160,13 +160,13 @@ begin
 //          Params.EditorModel('gpt-4.5-preview');
         end)
     .Execute
-        .&Then<string>(
-          function (Value: string): string
-          begin
-            ShowMessage('Processus ended.');
-            {--- Unlock controls }
-            WaitUntil(False);
-          end);
+      .&Then<string>(
+        function (Value: string): string
+        begin
+          ShowMessage('Processus ended.');
+          {--- Unlock controls }
+          WaitUntil(False);
+        end);
 end;
 
 procedure TForm1.Button4Click(Sender: TObject);
@@ -189,24 +189,24 @@ begin
 //        Params.OutputType('json');
       end)
     .Execute
-        .&Then<string>(
-            function (Value: string): string
-            begin
-              EdgeDisplayer.Display(Value);
-              ShowMessage('Processus ended.');
-              {--- Unlock controls }
-              WaitUntil(False);
-            end)
-        .&Catch(
-          procedure(E: Exception)
-          begin
-            try
-              EdgeDisplayer.Display(E.Message);
-              WaitUntil(False);
-            finally
-              E.Free;
-            end;
-          end);
+      .&Then<string>(
+        function (Value: string): string
+        begin
+          EdgeDisplayer.Display(Value);
+          ShowMessage('Processus ended.');
+          {--- Unlock controls }
+          WaitUntil(False);
+        end)
+      .&Catch(
+        procedure(E: Exception)
+        begin
+          try
+            EdgeDisplayer.Display(E.Message);
+            WaitUntil(False);
+          finally
+            E.Free;
+          end;
+        end);
 end;
 
 procedure TForm1.Button5Click(Sender: TObject);
@@ -223,29 +223,30 @@ begin
       procedure (Params: TPromiseParams)
       begin
         Params.Client(IoC.Resolve<IGenAI>);
-        Params.Model('gpt-4o-mini-search-preview');
+        Params.Model('gpt-4o-search-preview');
+//        Params.Model('gpt-4o-mini-search-preview');
         Params.Input(Memo2.Text);
         Params.ProcessingMode('web_parallel');
       end)
     .Execute
-        .&Then<string>(
-            function (Value: string): string
-            begin
-              EdgeDisplayer.Display(Value);
-              ShowMessage('Processus ended.');
-              {--- Unlock controls }
-              WaitUntil(False);
-            end)
-        .&Catch(
-          procedure(E: Exception)
-          begin
-            try
-              EdgeDisplayer.Display(E.Message);
-              WaitUntil(False);
-            finally
-              E.Free;
-            end;
-          end);
+      .&Then<string>(
+        function (Value: string): string
+        begin
+          EdgeDisplayer.Display(Value);
+          ShowMessage('Processus ended.');
+          {--- Unlock controls }
+          WaitUntil(False);
+        end)
+      .&Catch(
+        procedure(E: Exception)
+        begin
+          try
+            EdgeDisplayer.Display(E.Message);
+            WaitUntil(False);
+          finally
+            E.Free;
+          end;
+        end);
 end;
 
 procedure TForm1.Button6Click(Sender: TObject);
